@@ -8,7 +8,7 @@ class StreetFoodApp < Sinatra::Base
   # index
   get "/sfoods" do
     @sfoods = Sfood.all
-    erb: :"sfoods/new"
+    erb :"sfoods/new"
   end
 
   # new

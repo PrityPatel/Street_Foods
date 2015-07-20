@@ -4,12 +4,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Street Foods App</title>
-  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to my Street Foods App<h1>
+    <nav>
+      <ul>
+        <li><a href="/">Street Foods App</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/sfoods">Street Foods</a></li>
+        <li><a href="/sfoods/new">Add A Street Food</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <%= yield %>
