@@ -1,0 +1,12 @@
+<h2>Edit</h2>
+
+<form class="sfood" id="edit-sfood" method="POST" action='/sfoods/<%= @sfood.id %>'>
+<input type="hidden" name="_method" value="PUT">
+
+<div>
+  <label for="sfood-name">Name:</label>
+  <input type="text" name='sfood[name]' id="sfood-name" value="<%= @sfood.name %>">
+</div>
+
+<div>
+  <label

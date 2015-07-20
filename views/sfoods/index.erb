@@ -1,0 +1,18 @@
+<h2>Street Foods</h2>
+
+<div>
+  <ul class = "sfoods">
+    <% @sfoods.each do |sfood| %>
+      <li>
+        <a href="/sfoods/<%= sfood.id %>"><%= sfood.to_s %></a>
+
+        <a href="/sfoods/<%= sfood.id%>/edit">Edit</a>
+
+        <a href="/sfoods/">Delete</a>
+      </li>
+    <% end %>
+  </ul>
+
+</div>
+
+<a href="/sfoods/new">Add</a>
